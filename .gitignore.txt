@@ -1,0 +1,4 @@
+.zip
+.webp
+.eps
+.rar
