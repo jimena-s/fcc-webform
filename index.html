@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <title>Positano Ristorante / Encuesta</title>
+    <meta name="keywords" content="encuesta, form, formulario, freecodecamp">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <main id="main">
+    <div class="encabezado">
+        <img class="logo" src="https://i.postimg.cc/m2k78G62/positano.webp">
+        <h1 id="title">encuesta de satisfacción de clientes</h1>
+        <hr>
+        <p id="description">¡Gracias por su tiempo!</p>      
+    </div>
+<div class="form-container">
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Ingresá tu nombre"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Ingresá tu mail nombre@ejemplo.com"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Edad<span class="clue"><i>(opcional)</i></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Tu edad"
+      />
+    </div>
+    <div class="radio">
+      <p>¿Recomendarías nuestro ristorante a un amigo?</p>
+      <input type="radio" name="recommend" id="sin-dudas" value="100">
+      <label for="sin-dudas">Sin dudas &#128079;      </label>
+
+      <input type="radio" name="recommend" id="puede-ser" value="50">
+      <label for="puede-ser">Puede ser</label>
+
+      <input type="radio" name="recommend" id="no" value="0">
+      <label for="no">No &#128078;</label>
+
+    </div>
+
+    <div class="form-group">
+      <p>¿Cuál paso de nuestro menú disfrutaste más?</p>
+      <select id="dropdown" name="dropdown" class="form-control" required>
+        <option disabled selected value>Elegí una opción</option>
+        <option value="0">Tapeo</option>
+        <option value="1">Entrada</option>
+        <option value="2">Principal</option>
+        <option value="3">Postre</option>
+      </select>
+    </div>
+
+    <div class="checkbox">
+      <p>¿Qué te gustaría que mejoremos?</p>
+      <input type="checkbox" name="mejoras" id="ambientacion" value="ambientacion">
+      <label for="ambientacion">Ambientación / Decoración</label>
+      <br>
+      <input type="checkbox" name="mejoras" id="entradas" value="entradas">
+      <label for="entradas">Platos de entradas</label>
+      <br>
+      <input type="checkbox" name="mejoras" id="stacc" value="stacc">
+      <label for="stacc">Más opciones sin TACC</label>
+      <br>
+      <input type="checkbox" name="mejoras" id="pizzas" value="pizzas">
+      <label for="pizzas">Más variedades de pizzas</label>
+      <br>
+      <input type="checkbox" name="mejoras" id="postres" value="postres">
+      <label for="postres">Más postres de origen italiano</label>
+
+    </div>
+
+    <div class="form-group">
+      <p>Dejanos tu sugerencia</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Escribí aquí tus comentarios..."
+      ></textarea>
+    </div>
+
+    <div class="boton-div">
+      <button type="submit" id="submit" class="boton">
+        ENVIAR
+      </button>
+    </div>
+
+  </form>          
+</div>
+
+
+</main>
+</body>
+</html>
